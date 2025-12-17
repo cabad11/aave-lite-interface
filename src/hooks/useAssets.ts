@@ -9,7 +9,7 @@ import useCurrentPool from './useCurrentPool';
 
 export type ASSET = {
   symbol: SUPPORTED_SYMBOLS
-  name: string
+  name?: string
   decimals: number
   balance: string
   address: UNDERLYING_ADDRESSES | A_TOKEN_ADDRESSES

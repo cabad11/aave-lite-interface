@@ -36,14 +36,16 @@ const AssetCard = ({ symbol, name, balance, address, logoURI }: ASSET) => {
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-medium text-text">{symbol}</span>
-            <span
-              className={`
-                text-sm text-subtext
-                md:text-base
-              `}
-            >
-              {name}
-            </span>
+            {!!name && (
+              <span
+                className={`
+                  text-sm text-subtext
+                  md:text-base
+                `}
+              >
+                {name}
+              </span>
+            )}
           </div>
           <div
             className={`

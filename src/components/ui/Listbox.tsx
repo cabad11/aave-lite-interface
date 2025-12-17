@@ -17,7 +17,7 @@ const CustomListbox = <T extends string,>({ options, value, onChange }: Props<T>
           dark:bg-input/30 dark:hover:bg-input/50
           dark:aria-invalid:ring-destructive/40
         `}
-        disabled={!options}
+        disabled={!options || !options.length}
       >
         {value}
         <ChevronDown className="size-4 opacity-50" />

@@ -1,13 +1,13 @@
 import { Field, Label } from '@headlessui/react';
 import { toast } from 'react-hot-toast';
-import Button from './ui/Button';
-import Input from './ui/Input';
+import Button from '@/components/ui/Button';
+import Input from '@/components/ui/Input';
 import { POOL_ABI } from '@/consts/poolAbi';
 import { type Config } from 'wagmi';
 import { useAccount, useWaitForTransactionReceipt, useWriteContract } from 'wagmi';
 import useATokensAssets, { type A_TOKEN_ASSET } from '@/hooks/useATokenAsset';
 import { useEffect, useState } from 'react';
-import Listbox from './ui/Listbox';
+import Listbox from '@/components/ui/Listbox';
 import { parseUnits } from 'viem';
 import useAssets from '@/hooks/useAssets';
 import { cn } from '@/utils/cn';
