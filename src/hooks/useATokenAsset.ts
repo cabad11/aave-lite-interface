@@ -55,7 +55,7 @@ const useATokensAssets = () => {
       address: ATokenContacts?.[i]?.result as any,
     };
   }).filter(el => el != null).filter(asset => +asset.balance > 0.000001);
-
+  console.log(ATokenContacts, data, assets);
   if (!isSupportedChain) {
     return {
       data: undefined,
