@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-font-size: 16px;
+  --color-bg: #f7f8fa;
+  --color-card: #fff;
+  --color-text: #0b1220;
+  --color-subtext: #5b667a;
+  --color-primary: #2f6fed;
+  --color-primary-weak: #e7eeff;
+  --color-success: #2fbf71;
+  --color-warning: #ffb020;
+  --color-danger: #e5484d;
+  --color-border: #e6e9ee;
+  --color-input: #f3f5f8;
+  --color-background: #f7f8fa;
+  --color-foreground: #0b1220;
+  --color-card-foreground: #0b1220;
+  --color-popover: #fff;
+  --color-popover-foreground: #0b1220;
+  --color-primary-foreground: #fff;
+  --color-secondary: #f3f5f8;
+  --color-secondary-foreground: #0b1220;
+  --color-muted: #f3f5f8;
+  --color-muted-foreground: #5b667a;
+  --color-accent: #e7eeff;
+  --color-accent-foreground: #2f6fed;
+  --color-destructive: #e5484d;
+  --color-destructive-foreground: #fff;
+  --color-input-background: #f3f5f8;
+  --color-switch-background: #cbced4;
+  --color-font-weight-medium: 500;
+  --color-font-weight-normal: 400;
+  --color-ring: #2f6fed;
+  --color-chart-1: oklch(.646 .222 41.116);
+  --color-chart-2: oklch(.6 .118 184.704);
+  --color-chart-3: oklch(.398 .07 227.392);
+  --color-chart-4: oklch(.828 .189 84.429);
+  --color-chart-5: oklch(.769 .188 70.08);
+  --color-radius: .75rem;
+  --color-sidebar: oklch(.985 0 0);
+  --color-sidebar-foreground: oklch(.145 0 0);
+  --color-sidebar-primary: #030213;
+  --color-sidebar-primary-foreground: oklch(.985 0 0);
+  --color-sidebar-accent: oklch(.97 0 0);
+  --color-sidebar-accent-foreground: oklch(.205 0 0);
+  --color-sidebar-border: oklch(.922 0 0);
+  --color-sidebar-ring: oklch(.708 0 0);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+* {
+  border-color: var(--color-border);
+  outline-color: var(--color-ring);
+}
