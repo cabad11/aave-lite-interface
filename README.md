@@ -18,11 +18,6 @@ npm run dev
 ```bash
 npm run build
 ```
-### Testing
-```bash
-npm run test          
-npm run test:coverage
-```
 
 ### Tech Stack
 - Next.js 16
